@@ -1,0 +1,14 @@
+.navbar{
+    color: white;
+    font-size: 11px;
+    padding: 20px;
+    text-align: center;
+    
+}
+ul.unstyled{
+    list-style: none;
+    padding: 0px;
+}
+/* p{
+    font-size: 16px;
+} */
