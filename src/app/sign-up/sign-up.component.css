@@ -1,0 +1,22 @@
+/* .signup{
+    min-height: 300px;
+} */
+.btn-signup {
+	background-color: #1CB94E;
+	outline: none;
+	color: #fff;
+	font-size: 14px;
+	height: auto;
+	font-weight: normal;
+	padding: 10px 10px 10px 10px;
+	text-transform: uppercase;
+    border-color: #1CB94A;
+    margin-right: 60px;
+    margin-left: 50px;
+}
+.btn-signup:hover,
+.btn-signup:focus {
+	color: #fff;
+	background-color: #1CA347;
+	border-color: #1CA347;
+}
