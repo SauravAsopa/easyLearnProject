@@ -9,6 +9,13 @@ ul.unstyled{
     list-style: none;
     padding: 0px;
 }
-/* p{
-    font-size: 16px;
-} */
+h6{
+    position: absolute;
+    bottom: 0;
+    left: 540px;
+}
+.dev{
+    position: absolute;
+    bottom: 0;
+    left: 1050px;
+}
