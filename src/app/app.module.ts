@@ -1,3 +1,5 @@
+import { CommonService } from './common.service';
+import { DropdownDirective } from './dropdown.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -14,6 +16,7 @@ import { BecomeAteacherComponent } from './become-ateacher/become-ateacher.compo
 import { HireAteacherComponent } from './hire-ateacher/hire-ateacher.component';
 import { PostYourRequirementComponent } from './post-your-requirement/post-your-requirement.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
+import { LoginSignupComponent } from './login-signup/login-signup.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
     BecomeAteacherComponent,
     HireAteacherComponent,
     PostYourRequirementComponent,
-    HowItWorksComponent
+    HowItWorksComponent,
+    DropdownDirective,
+    LoginSignupComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,7 @@ import { HowItWorksComponent } from './how-it-works/how-it-works.component';
       ]},
           ])
   ],
-  providers: [],
+  providers: [CommonService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

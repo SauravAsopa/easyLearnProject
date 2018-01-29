@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../common.service';
 
 @Component({
   selector: 'app-common',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CommonComponent implements OnInit {
 
-  constructor() { }
+  toggleSignUpFlag = false;
+  constructor(private commonService: CommonService) { }
 
   ngOnInit() {
+    this.commonService.toggleSIgnUpSubject.subscribe(
+      (toggleSignUpFlag: boolean) => {
+        this.toggleSignUpFlag = toggleSignUpFlag;
+      }
+    )
   }
 
 }
