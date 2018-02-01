@@ -17,6 +17,7 @@ import { HireAteacherComponent } from './hire-ateacher/hire-ateacher.component';
 import { PostYourRequirementComponent } from './post-your-requirement/post-your-requirement.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { LoginSignupComponent } from './login-signup/login-signup.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { LoginSignupComponent } from './login-signup/login-signup.component';
     PostYourRequirementComponent,
     HowItWorksComponent,
     DropdownDirective,
-    LoginSignupComponent
+    LoginSignupComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

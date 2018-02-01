@@ -1,36 +1,101 @@
-<div class="container">
+<div class="container default">
   <div class="row">
     <div class="col-md-4">
-      <app-become-ateacher></app-become-ateacher>
-      <div class="row">
-        <div class="col-md-4">
-          <app-post-your-requirement></app-post-your-requirement>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <app-hire-ateacher></app-hire-ateacher>
-      <div class="row">
-        <div class="col-md-4">
-          <app-how-it-works></app-how-it-works>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="panel panel-signup">
-        <div class="panel-heading">
-          <div class="row">
-            <div class="col-xs-6">
-              <a routerLink="" class="active" id="login-form-link">Login</a>
-            </div>
-            <div class="col-xs-6">
-              <a routerLink="/signup" class="active" id="signup-form-link">SignUp</a>
+        <div class="container teacher">
+            <div class="row">
+              <div>
+                <h4 class="heading">
+                  Become a Teacher
+                </h4>
+                <div class="vl"></div>
+              </div>
+              <div>
+                <p class="content">
+                  Share your Knowledge. We give you
+                  <br> the platform to create your own class.
+                </p>
+              </div>
+              <div>
+                <button class="btn btn-primary" type="submit" >Start Teaching</button>
+              </div>
+          
             </div>
           </div>
-          <hr>
+          <br>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="container">
+                <div class="row">
+                  <div>
+                    <h4 class="heading">
+                      Become a Teacher
+                    </h4>
+                    <div class="vl1"></div>
+                  </div>
+                  <div>
+                    <p class="content">
+                      Share your Knowledge. We give you
+                      <br> the platform to create your own class.
+                    </p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" >Start Teaching</button>
+                  </div>
+              
+                </div>
+              </div>
         </div>
-        <router-outlet></router-outlet>
       </div>
+    </div>
+    <div class="col-md-4">
+        <div class="container">
+            <div class="row">
+              <div>
+                <h4 class="heading">
+                  Hire a Teacher
+                </h4>
+                
+              </div>
+              <div>
+                <p class="content">
+                  Share your Knowledge. We give <br> you
+                   the platform to find best teachers.
+                </p>
+              </div>
+              <div>
+                <button class="btn btn-primary" type="submit" >Start Teaching</button>
+              </div>
+          
+            </div>
+          </div>
+          <br>
+      <div class="row">
+        <div class="col-md-4">
+            <div class="container">
+                <div class="row">
+                  <div>
+                    <h4 class="heading">
+                      How it works.
+                    </h4>
+                  </div>
+                  <div>
+                    <p class="content">
+                      Share your Knowledge. We give you
+                      <br> the platform to create your own class.
+                    </p>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary" type="submit" >Start Teaching</button>
+                  </div>
+              
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+        <app-login-signup *ngIf="toggleSignUpFlag"></app-login-signup>
+        <p class="advertisement"*ngIf="!toggleSignUpFlag">advertisement</p>
     </div>
     <div>
     </div>

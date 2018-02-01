@@ -11,8 +11,8 @@
 	padding: 10px 0;
 	text-transform: uppercase;
     border-color: #59B2E6;
-    margin-left: 70px;
-    margin-right: 30px;
+    margin-left: 100px;
+    /* margin-right: 30px; */
 }
 .btn-login:hover,
 .btn-login:focus {
