@@ -16,8 +16,8 @@ import { BecomeAteacherComponent } from './become-ateacher/become-ateacher.compo
 import { HireAteacherComponent } from './hire-ateacher/hire-ateacher.component';
 import { PostYourRequirementComponent } from './post-your-requirement/post-your-requirement.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
-import { LoginSignupComponent } from './login-signup/login-signup.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +32,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     PostYourRequirementComponent,
     HowItWorksComponent,
     DropdownDirective,
-    LoginSignupComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

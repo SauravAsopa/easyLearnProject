@@ -1,27 +1,88 @@
+.navbar{
+    opacity: 0.5;
+    background-color: rgba(238, 66, 66, 0.007);
+    border: none;
+    /* min-height: 400px; */
+}
 .logo{
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-left: 8px;
+    padding-top: 12px;
+    color: black;
+    font-weight: bold;
+    }
+
+#categories{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      padding-left: 8px;
+      padding-top: 20px;
+      color: black;
+}
+.form-inline{
+    padding-top: 8px;
+    padding-left: 8px;
+}
+#search{
+    opacity: 0.3;
+    font-weight: bold;
+    padding-left: 12px;
+    
 }
 .form-inline{
     margin-top: 8px;
 }
-.btn-primary{
-    background-color: rgba(80, 48, 221, 0.521);
+#searchButton{
+    opacity: 0.3;
+    
 }
-/* .contactUs{
-    margin-right:10px;
-} */
-.login-signup{
+#home{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 14px;
+color: white;
+padding-top: 18px;
+}
+#aboutUs{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 14px;
+color: white;
+padding-top: 18px;
+}
+#contactUs{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 14px;
+color: white;
+padding-top: 18px;
+}
+#loginSignup{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+font-size: 14px;
+color: white;
+padding-top: 18px;
+padding-left: 4px;
+}
+
+#login-signup{
     margin-right: 10px;
 }
-.logo{
-    margin-left: 10px;
-}
-#search{
-    margin-left: 10px;
-}
-.categories{
-    margin-left: 10px;
-}
+
 .dropdown-header{
     font-size: 14px; 
+    
+}
+.dropdown-header:hover{
+color: brown;
+}
+.dropdown-header ul li{
+    display: none;
+}
+.dropdown-header:hover > ul li{
+    display: block;
 }

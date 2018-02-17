@@ -8,14 +8,20 @@
   </div>
   <div class="navbar-collapse collapse">
     <ul class="nav navbar-nav navbar-left">
-      <li class="logo">Logo</li>
+      <li class="logo"><b>EasyLearn</b></li>
       <li class="dropdown" appDropdown>
-        <a href="#" class="dropdown-toggle categories" data-toggle="dropdown">Categories
+        <a routerLink="" class="dropdown-toggle categories" id="categories" data-toggle="dropdown">Categories
           <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <a href="#" class="dropdown-header">Class</a>
+          <li class="dropdown-header">Class
+            <ul>
+              <li>asd</li>
+              <li>asd</li>
+            </ul>
+          </li>
           <li class="dropdown-header">Subject</li>
+          <li class="dropdown-header">Institutes</li>
           <li class="dropdown-header">NCERT Questions</li>
           <li class="dropdown-header">Previous Year Questions</li>
           <li class="dropdown-header">Videos</li>
@@ -30,23 +36,23 @@
       <li>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" id="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+          <button class="btn btn-default my-2 my-sm-0" id="searchButton" type="submit">Search</button>
         </form>
       </li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-      <li class="active">
-        <a routerLink="">Home</a>
+      <li>
+        <a id="home" routerLink="">Home</a>
       </li>
       <li>
-        <a routerLink="/aboutus">About Us</a>
+        <a id="aboutUs" routerLink="/aboutus">About Us</a>
       </li>
-      <li class="contactUs">
-        <a routerLink="/contactus">Contact Us</a>
+      <li>
+        <a id="contactUs" routerLink="/contactus">Contact Us</a>
       </li>
       <li class="login-signup">
-        <a routerLink="" (click)="onClick()">Login/SignUp</a>
+        <a id="loginSignup" routerLink="" (click)="onClick()">Login/SignUp</a>
       </li>
 
     </ul>

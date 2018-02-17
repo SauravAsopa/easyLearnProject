@@ -1,6 +1,10 @@
 .login {
     min-height: 300px;
 }
+#loginForm{
+	padding-left: 60px;
+    font-weight: bold;
+}
 .btn-login {
 	background-color: #59B2E0;
 	outline: none;
@@ -11,7 +15,7 @@
 	padding: 10px 0;
 	text-transform: uppercase;
     border-color: #59B2E6;
-    margin-left: 70px;
+    margin-left: 60px;
     /* margin-right: 30px; */
 }
 .btn-login:hover,
