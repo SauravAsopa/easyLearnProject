@@ -18,6 +18,8 @@ import { PostYourRequirementComponent } from './post-your-requirement/post-your-
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { RegistrationStudentComponent } from './registration-student/registration-student.component';
+import { RegistrationTeacherComponent } from './registration-teacher/registration-teacher.component';
 
 @NgModule({
   declarations: [
@@ -34,17 +36,15 @@ import { RegistrationComponent } from './registration/registration.component';
     DropdownDirective,
     AboutUsComponent,
     RegistrationComponent,
+    RegistrationStudentComponent,
+    RegistrationTeacherComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {
-        path: '', component: CommonComponent, children: [
-          { path: '', component: LoginComponent },
-          { path: 'signup', component: SignUpComponent },
-        ]
-      },
-      { path: 'aboutus', component: AboutUsComponent }
+      {path: '', component: CommonComponent},
+      { path: 'aboutus', component: AboutUsComponent },
+      {path: 'register', component: RegistrationComponent}
 
     ])
   ],

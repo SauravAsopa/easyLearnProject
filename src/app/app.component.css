@@ -1,9 +1,11 @@
 body{
-    background-image: url('../assets/landingPage.jpg');
-    background-repeat: no-repeat;
-	/* position: fixed; */
+	background-image: url('../assets/landingPage.jpg');
+	/* background-color: rgb(70, 107, 107); */
+    background-repeat:no-repeat;
+	background-size: cover;
 	top: 0px;
 	left: 0px;
+	bottom: 0px;
 	height: 100%;
 	width: 100%;
 
