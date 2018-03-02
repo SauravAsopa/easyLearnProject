@@ -20,6 +20,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { RegistrationStudentComponent } from './registration-student/registration-student.component';
 import { RegistrationTeacherComponent } from './registration-teacher/registration-teacher.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { KeyPeopleComponent } from './key-people/key-people.component';
 
 @NgModule({
   declarations: [
@@ -38,13 +40,20 @@ import { RegistrationTeacherComponent } from './registration-teacher/registratio
     RegistrationComponent,
     RegistrationStudentComponent,
     RegistrationTeacherComponent,
+    ContactUsComponent,
+    KeyPeopleComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path: '', component: CommonComponent},
+      {path: '', component: CommonComponent, children: [
+        {path:'login', component: LoginComponent}
+      ]},
       { path: 'aboutus', component: AboutUsComponent },
-      {path: 'register', component: RegistrationComponent}
+      {path: 'register', component: RegistrationComponent, children: [
+        {path:'', component: RegistrationTeacherComponent},
+        {path:'student', component: RegistrationStudentComponent}
+      ]}
 
     ])
   ],

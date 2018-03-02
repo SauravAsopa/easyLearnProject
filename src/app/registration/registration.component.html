@@ -5,10 +5,10 @@
         <div class="panel-heading">
           <div class="row">
             <div class="col-xs-6">
-              <a routerLink="#" class="active">Teacher</a>
+              <a routerLink="/register" routerLinkActive = "active">Teacher</a>
             </div>
             <div class="col-xs-6">
-              <a routerLink="#">Student</a>
+              <a routerLink="/register/student" routerLinkActive = "active">Student</a>
             </div>
             <hr>
           </div>
@@ -16,7 +16,7 @@
         <div class="panel-body">
           <div class="row">
             <div class="col-lg-12">
-
+             <router-outlet></router-outlet>
             </div>
           </div>
         </div>

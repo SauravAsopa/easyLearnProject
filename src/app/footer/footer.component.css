@@ -1,8 +1,17 @@
+.container{
+    position: relative;
+    right: 0px;
+    height: auto;
+    /* opacity: 0.5; */
+}
 .navbar{
-    color: white;
+    color: rgb(247, 240, 240);
     font-size: 11px;
     padding: 20px;
     text-align: center;
+    opacity: 0.5;
+    margin-bottom: 0px;
+    font-weight: bold;
     
 }
 ul.unstyled{
@@ -10,12 +19,12 @@ ul.unstyled{
     padding: 0px;
 }
 h6{
-    position: absolute;
-    bottom: 0;
-    left: 540px;
+    position: relative;
+    margin-top: 30px;
+    right: 120px;
 }
 .dev{
-    position: absolute;
-    bottom: 0;
-    left: 1050px;
+    position: relative;
+    left: 80px;
+    margin-top: 30px;
 }

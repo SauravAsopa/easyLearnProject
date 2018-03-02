@@ -1,5 +1,8 @@
 .login {
-    min-height: 300px;
+	min-height: 300px;
+}
+.panel-login{
+	opacity: 0.5;
 }
 #loginForm{
 	padding-left: 60px;

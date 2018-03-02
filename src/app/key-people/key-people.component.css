@@ -1,0 +1,32 @@
+.container{
+    min-height: 400px;
+}
+.heading{
+    text-align: center;
+    color: rgb(245, 243, 240);
+    font-size: 24px;
+}
+.name{
+    font-size: 20px;
+    color: azure;
+    padding-top: 30px;
+    margin: 0px;
+    margin-left: 250px;
+}
+
+.position{
+    color: azure;
+    font-size: 12px;
+    margin-left: 270px;
+}
+.position2{
+    color: azure;
+    font-size: 12px;
+    margin-left: 260px;
+}
+.name1{
+    margin-top: 90px;
+    font-size: 20px;
+    color: azure;
+    margin-right: 10px;
+}
