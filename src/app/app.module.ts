@@ -53,7 +53,8 @@ import { KeyPeopleComponent } from './key-people/key-people.component';
       {path: 'register', component: RegistrationComponent, children: [
         {path:'', component: RegistrationTeacherComponent},
         {path:'student', component: RegistrationStudentComponent}
-      ]}
+      ]},
+      {path: 'keypeople', component: KeyPeopleComponent}
 
     ])
   ],
