@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonService } from '../common.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-common',
@@ -9,7 +10,7 @@ import { CommonService } from '../common.service';
 export class CommonComponent implements OnInit {
 
   toggleSignUpFlag = false;
-  constructor(private commonService: CommonService) { }
+  constructor(private commonService: CommonService, private router: Router) { }
 
   ngOnInit() {
     this.commonService.toggleSIgnUpSubject.subscribe(
@@ -18,5 +19,11 @@ export class CommonComponent implements OnInit {
       }
     )
   }
+  btnClick(){
+    this.router.navigateByUrl('/register');
+    }
+    btnClick1(){
+      this.router.navigateByUrl('/register/student');
+    }
 
 }

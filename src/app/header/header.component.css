@@ -1,9 +1,13 @@
-.navbar-static-top{
+.navbar-fixed-top{
     opacity: 0.5;
     background-color: rgba(238, 66, 66, 0.007);
     border: none;
-    /* min-height: 400px; */
+
 }
+.navbar-collapse{
+    border-color: rgba(92, 92, 92, 0.192)
+}
+
 .logo{
     font-size: 25px;
     font-family: 'Times New Roman', Times, serif;
@@ -78,17 +82,27 @@ margin-right: 10px;
 #login-signup{
     margin-right: 10px;
 }
+.dropdown:hover > ul{
+    display: block;
+}
 
 .dropdown-header{
     font-size: 14px; 
-    
+    width: 100%;
+    position: relative;
 }
 .dropdown-header:hover{
 color: brown;
 }
-.dropdown-header ul li{
+.dropdown-header ul {
     display: none;
+    position: relative;
+
 }
-.dropdown-header:hover > ul li{
+.dropdown-header:hover > ul {
     display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 150px;
+    margin-top: 0px;
 }
